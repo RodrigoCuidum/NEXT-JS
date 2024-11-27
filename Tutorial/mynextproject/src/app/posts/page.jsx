@@ -1,5 +1,5 @@
-import PostCard from '@/components/PostCard'
-import './posts.css'
+import PostCard from "@/src/components/PostCard";
+import "./posts.css";
 
 // RSC
 async function loadPosts() {
@@ -13,7 +13,7 @@ async function loadPosts() {
 async function postPage() {
   const posts = await loadPosts();
   return (
-    <div className='grid'>
+    <div className="grid">
       {posts.map((post) => (
         <PostCard post={post} key={post.id} />
       ))}

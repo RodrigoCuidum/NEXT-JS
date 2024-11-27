@@ -1,13 +1,12 @@
-import Users from "@/components/Users";
+import Users from "@/src/components/Users";
 
 export const metadata = {
-  title: 'Mi página Home'
-}
+  title: "Mi página Home",
+};
 
 const page = () => {
   return (
     <section>
-      <h1>Hello World!</h1>
       <Users />
     </section>
   );
